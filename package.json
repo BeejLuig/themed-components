@@ -1,0 +1,32 @@
+{
+  "name": "themed-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --mode=development",
+    "storybook:uk": "webpack --watch --mode=development & STORYBOOK_THEME=uk start-storybook",
+    "storybook:us": "webpack --watch --mode=development & STORYBOOK_THEME=us start-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@purtuga/esm-webpack-plugin": "^1.1.1",
+    "@storybook/html": "^5.1.10",
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "lit-element": "^2.2.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "to-string-loader": "^1.1.5",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
