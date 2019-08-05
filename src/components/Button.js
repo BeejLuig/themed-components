@@ -1,8 +1,6 @@
 // Import the LitElement base class and html helper function
 import { LitElement, html, css, unsafeCSS } from 'lit-element';
-import theme from 'theme';
-
-const { locals } = theme;
+import theme, { locals as styles } from 'theme';
 
 // Extend the LitElement base class
 export default class Button extends LitElement {
@@ -16,7 +14,7 @@ export default class Button extends LitElement {
 
   render() {
     return html`
-      <button class=${locals.button}>
+      <button class=${styles.button}>
         <slot></slot>
       </button>
     `;
